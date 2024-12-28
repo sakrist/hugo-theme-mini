@@ -4,8 +4,10 @@ html[theme='dark-mode'] {
 
 body {
   line-height: 1;
-  font: normal 15px/1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #404040;
+  font: normal 17px/1.5em 'Helvetica Neue', Helvetica, sans-serif;
+  /* font-family: var("SF Pro Text",system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Helvetica","Arial",sans-serif); */
+  /* font-size: 18px; */
+  /* color: var(--colors-text,var(--color-text)); */
   line-height: 1.75;
   letter-spacing: 0.008em;
 }
@@ -81,15 +83,24 @@ h2,
 h3 {
   font-weight: 400;
 }
+ul {
+  margin-block-start: 0;
+  margin-block-end: 1.25em;
+}
 p {
-  margin-block-start: 1.5em;
-  margin-block-end: 1.5em;
+  margin-block-start: 0;
+  margin-block-end: 1.25em;
 }
 p,
 pre {
   word-break: normal;
   overflow-wrap: anywhere;
 }
+p:has(+ ul) {
+  margin-bottom: 0;
+}
+
+
 .markdown-image img {
   max-width: 100%;
 }
@@ -250,7 +261,7 @@ nav.navigation a.button {
 /* profile  */
 
 .profile {
-  margin: 60px auto 0 auto;
+  margin: 20px auto 60px auto;
   text-align: center;
 }
 
@@ -279,7 +290,7 @@ nav.navigation a.button {
 
 /* index post list */
 #list-page {
-  max-width: 580px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -298,7 +309,7 @@ nav.navigation a.button {
 }
 
 #list-page .title a {
-  color: #404040;
+  color: #000;
   display: block;
 }
 
@@ -307,6 +318,7 @@ nav.navigation a.button {
 }
 
 #list-page .date {
+  font: normal 13px/1.5em 'Helvetica Neue', Helvetica, sans-serif;
   width: 20%;
   float: right;
   text-align: right;
@@ -317,10 +329,11 @@ nav.navigation a.button {
 
 #list-page .summary {
   color: #757575;
-  margin-top: 12px;
+  font: normal 15px/1.5em 'Helvetica Neue', Helvetica, sans-serif;
+  margin-top: 4px;
   word-break: normal;
   overflow-wrap: anywhere;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
 }
 
 #list-page .cover {
@@ -350,8 +363,8 @@ nav.navigation a.button {
 
 /* single page */
 #single {
-  max-width: 680px;
-  margin: 60px auto 0 auto;
+  max-width: 800px;
+  margin: 0px auto 0 auto;
   padding: 0 64px;
 }
 
@@ -403,7 +416,7 @@ nav.navigation a.button {
 
 
 #archive {
-  max-width: 580px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
 }
@@ -488,14 +501,14 @@ nav.navigation a.button {
 
 /* section page */
 #section {
-  max-width: 580px;
+  max-width: 800px;
   margin: 48px auto 0 auto;
   padding: 0 12px;
 }
 
 /* 404 page */
 #page-404 {
-  max-width: 580px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 24px;
 }
