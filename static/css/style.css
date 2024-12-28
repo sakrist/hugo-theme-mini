@@ -4,7 +4,7 @@ html[theme='dark-mode'] {
 
 body {
   line-height: 1;
-  font: normal 17px/1.5em 'Helvetica Neue', Helvetica, sans-serif;
+  font: normal 16px/1.5em 'Helvetica Neue', Helvetica, sans-serif;
   /* font-family: var("SF Pro Text",system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Helvetica","Arial",sans-serif); */
   /* font-size: 18px; */
   /* color: var(--colors-text,var(--color-text)); */
@@ -115,7 +115,15 @@ h3:hover a,
 h4:hover a { 
   visibility: visible
 }
+
+p:has(+ .highlight) {
+  margin-bottom: 2px;
+}
+
+
 .highlight pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: 14px;
   padding: 7px;
   overflow-x: auto;
 }
@@ -126,7 +134,8 @@ h4:hover a {
 }
 p code {
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-  font-size: inherit;
+  /* font-size: inherit; */
+  font-size: 14px;
   background-color: rgba(0, 0, 0, 0.06);
   padding: 0 2px;
   border: 1px solid rgba(0, 0, 0, 0.08);
