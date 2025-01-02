@@ -1,0 +1,14 @@
+  <div class="social-share">
+    <a href='https://twitter.com/intent/tweet?url={{ .Permalink }}&text="{{ .Title }}"' target="_blank" rel="noopener">
+      {{ $svg :=  print "svgs/twitter.svg" }}
+      {{ partial $svg (dict "fill" "#bbbbbb" "width" 20 "height" 20 ) }}
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"  target="_blank" class="fb-share-button fb-xfbml-parse-ignore" rel="noopener">
+      {{ $svg :=  print "svgs/facebook.svg" }}
+      {{ partial $svg (dict "fill" "#bbbbbb" "width" 20 "height" 20 ) }}
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" target="_blank" rel="noopener">
+      {{ $svg :=  print "svgs/linkedin.svg" }}
+      {{ partial $svg (dict "fill" "#bbbbbb" "width" 20 "height" 20 ) }}
+    </a>
+  </div>
