@@ -548,3 +548,32 @@ nav.navigation a.button {
   top: 1px;
   color: #bbb;
 }
+
+
+/* Container for the panel */
+.panel {
+  border: 1px solid #AED581; /* Light green border */
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #F0FFF4; /* Light green background */
+}
+
+
+/* Panel header styling */
+.panel-header {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+/* Optional: Styling for links inside the panel */
+.panel-content a {
+  color: #5badf0;
+  text-decoration: none;
+}
+
+.panel-content p {
+  margin-bottom: 0;
+}
