@@ -38,7 +38,7 @@ hr {
 
 table {
   width: 100%;
-  margin: 40px 0;
+  margin: 20px 0;
   border-collapse: collapse;
   line-height: 1.5em;
 }
@@ -52,7 +52,7 @@ th, td {
 table td, td {
   border-spacing: none;
   border-style: solid;
-  padding: 10px 15px;
+  padding: 8px 15px;
   border-width: 1px 0 0 0;
 }
 thead th, th {
