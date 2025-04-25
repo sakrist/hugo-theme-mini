@@ -17,6 +17,7 @@
     {{if .IsPage}}
       <meta property="og:type" content="article" />
       <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
+      <!-- <script async defer src="{{ "/js/mastodon.js" | relURL }}"></script> -->
     {{end}}
 <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
 
@@ -33,7 +34,9 @@
 <link rel="shortcut icon" href="{{ "/images/favicon.ico" | relURL }}" type="image/x-icon" />
 
 {{ if and (not .Site.BuildDrafts) .Site.Params.enableGoogleAnalytics }} 
-  {{ template "_internal/google_analytics.html" . }}
+  <!-- Google Analytics script will be loaded conditionally via cookie consent JS -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ .Site.Params.googleAnalytics }}"></script>
+  <script src="{{ "/js/cookie-consent.js" | relURL }}"></script>
 {{ end }}
 
 {{ if or .Params.math .Site.Params.math }}
