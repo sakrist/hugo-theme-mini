@@ -15,8 +15,5 @@
     </main>
     
     {{ partial "footer.html" . }}
-    {{ if and (not .Site.BuildDrafts) .Site.Params.enableGoogleAnalytics }}
-        {{- partial "cookie-consent.html" . -}}
-    {{ end }}
   </body>
 </html>
