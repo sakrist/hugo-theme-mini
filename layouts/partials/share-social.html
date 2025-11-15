@@ -1,4 +1,8 @@
   <div class="social-share">
+    <a href="https://mastodon.social/share?text={{ .Title }}%20{{ .Permalink }}" target="_blank" rel="noopener">
+      {{ $svg :=  print "svgs/mastodon.svg" }}
+      {{ partial $svg (dict "fill" "#bbbbbb" "width" 20 "height" 20 ) }}
+    </a>
     <a href='https://twitter.com/intent/tweet?url={{ .Permalink }}&text="{{ .Title }}"' target="_blank" rel="noopener">
       {{ $svg :=  print "svgs/twitter.svg" }}
       {{ partial $svg (dict "fill" "#bbbbbb" "width" 20 "height" 20 ) }}
